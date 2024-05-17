@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div style="display: flex; flex-direction: column; justify-content: space-between;" class="block">
+        <h2 style="color: green; font-size: 30px;">Статьи</h2>
+        {% for article in articles %}
+        <a style="text-decoration: none; font-size: 30px; text-transform:uppercase; margin-bottom: 15px; " href="% url 'article.info'  article_id=article.id %">
+          {{article.id}}. {{article.name}} <br>
+        </a>
+        {% endfor %}
+    </div>
+
+
+</body>
+</html>
